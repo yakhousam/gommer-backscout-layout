@@ -10,7 +10,6 @@ import {
   ResponsiveContext,
   Text,
 } from "grommet";
-import { grommet } from "grommet/themes";
 import { FormClose, Menu } from "grommet-icons";
 
 const theme = {
@@ -43,7 +42,7 @@ const AppBar = (props) => (
 function App() {
   const [showSidebar, setShowSidebar] = useState(false);
   return (
-    <Grommet theme={grommet} full>
+    <Grommet theme={theme} full>
       <ResponsiveContext.Consumer>
         {(size) => (
           <Box fill direction="row">
